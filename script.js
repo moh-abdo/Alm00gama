@@ -76,7 +76,7 @@ const finalMessage = messageTemplate.replace('{cardTitle}', data.title);
 const encodedMessage = encodeURIComponent(finalMessage);
 
 // 4. قم ببناء رابط الواتساب الكامل وقم بتعيينه للزر
-card.querySelector('.card-whatsapp-link').href = `https://wa.me/966597389791?text=${encodedMessage}`;
+card.querySelector('.card-whatsapp-link').href = `https://wa.me/966549225740?text=${encodedMessage}`;
 
 // --- نهاية التعديل ---
 
@@ -176,7 +176,7 @@ card.querySelector('.card-whatsapp-link').href = `https://wa.me/966597389791?tex
             const quoteBtn = document.getElementById('requestQuoteBtn');
             if (quoteBtn) {
                 const encodedMessage = encodeURIComponent(messageTemplates.quoteRequest);
-                quoteBtn.href = `https://wa.me/966597389791?text=${encodedMessage}`;
+                quoteBtn.href = `https://wa.me/966549225740?text=${encodedMessage}`;
             }
 
             // التحكم المباشر بالأنماط (الحل المضمون )
@@ -311,7 +311,7 @@ card.querySelector('.card-whatsapp-link').href = `https://wa.me/966597389791?tex
             heartIcon.classList.toggle('fas', state.userLiked);
             heartIcon.classList.toggle('far', !state.userLiked);
             const message = messageTemplates.orderRequest.replace('{serviceName}', name);
-            li.querySelector('.service-order-link').href = `https://wa.me/966597389791?text=${encodeURIComponent(message  )}`;
+            li.querySelector('.service-order-link').href = `https://wa.me/966549225740?text=${encodeURIComponent(message  )}`;
             const starContainer = li.querySelector('.interactive-rating');
             for (let i = 1; i <= 5; i++) {
                 const star = document.createElement('i');
@@ -545,7 +545,7 @@ showMultiChoiceToast(message, buttons) {
                 detailsContainer.innerHTML = `<p>${item.details}</p>`;
             }
             const message = messageTemplates.orderRequest.replace('{serviceName}', item.name);
-            document.getElementById('detailsModalWhatsappBtn').href = `https://wa.me/966597389791?text=${encodeURIComponent(message  )}`;
+            document.getElementById('detailsModalWhatsappBtn').href = `https://wa.me/966549225740?text=${encodeURIComponent(message  )}`;
             this.closeMainModal(); // نغلق النافذة الرئيسية أولاً
             this.elements.detailsModal.classList.add('show');
         },
