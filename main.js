@@ -112,7 +112,7 @@ function initializeNewContactForm() {
             e.preventDefault(); // منع الإرسال الافتراضي
 
             // 1. !! هام: استبدل هذا الرقم برقم الواتساب الخاص بك !!
-            const whatsappNumber = '966597389791'; 
+            const whatsappNumber = '966549225740'; 
 
             // 2. جمع البيانات من الحقول
             const name = document.getElementById('name').value;
